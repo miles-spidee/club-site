@@ -128,6 +128,13 @@ nav .logo {
     }
 }
 
+@media only screen and (max-width:420px)  {
+    nav ol li {
+        margin: 0 0.4rem;
+        padding: 0.2rem;
+    }
+}
+
 /* hero section */
 
 .hero-sec {
