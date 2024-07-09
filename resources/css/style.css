@@ -252,13 +252,6 @@ nav .logo {
     }
 }
 
-@media only screen and (min-width:400px) and (max-width:600px) {
-    .hero-img img {
-        transform: scale(1.5); 
-        top: 8rem;
-   }
-}
-
 /* page 2 and page 3 comms*/
 .page-2 , .page-3 , .page-4 , .page-5{
     border-bottom: 1px black solid;
