@@ -7,7 +7,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 body {
@@ -67,7 +67,7 @@ section {
     width: 100%;
     text-align: center;
     font-size: 4rem;
-    border-bottom: 1px dashed black;
+    /* border-bottom: 1px dashed black; */
 }
 
 /* nav */
@@ -173,7 +173,7 @@ nav .logo {
 
 @media only screen and (max-width:535px){
     .hero-title {
-        font-size: 4rem;
+        font-size:5rem;
     }
 }
 
@@ -377,24 +377,26 @@ nav .logo {
 
 .join-btn {
     display: block;
-    background-color: aqua;
-    border: none;
+    background: linear-gradient(130deg, rgb(255, 252, 206) 0%, rgb(224, 155, 247) 100%);
+    border: 2px black solid;
     padding: 0.8rem 2rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-style: italic;
-    border-radius: 10%;
+    border-radius: 15px;
     font-size: 2rem;
     margin: 1rem auto;
+    cursor: pointer;
 }
 
 .join-btn:hover {
-    background-color: rgb(63, 145, 145);
+    background: linear-gradient(130deg, rgba(238,224,0,1) 0%, rgba(216,101,255,1) 100%);
 }
 
 .join-btn:active {
-    background-color: rgb(133, 166, 166);
+    color: white;
+    background: linear-gradient(130deg, rgba(163,153,0,1) 0%, rgba(187,0,250,1) 100%);
 }
 
 footer {
@@ -447,13 +449,13 @@ footer .footer-logo {
 
 @media only screen and (min-width:300px) and (max-width:400px) {
     html {
-        font-size:6px;
+        font-size:8px;
     }
 }
 
 @media only screen and (min-width:100px) and (max-width:400px) {
     html {
-        font-size:3px;
+        font-size:7px;
     }
 }
 
