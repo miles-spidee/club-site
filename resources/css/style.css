@@ -78,19 +78,31 @@ section {
     background: linear-gradient(132deg, rgba(243, 248, 171, 1) 0%, rgba(255, 245, 255, 1) 37%, rgba(255, 247, 231, 1) 59%, rgba(248, 231, 248, 1) 87%, rgba(255, 232, 193, 1) 100%);
 }
 
+main {
+    position: relative;
+}
 
 nav {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
-    /* background-color: rgb(243, 150, 150); */
+    padding-top: 0.8rem;
+    background: linear-gradient(132deg, rgba(238, 245, 144, 0.8) 0%, rgba(243, 228, 243, 0.8) 37%, rgba(244, 231, 204, 0.8) 59%, rgba(253, 221, 253, 0.8) 87%, rgba(251, 224, 179, 0.8) 100%);
+    backdrop-filter: blur(7px);
     border-bottom: 1px black solid;
 }
 
+nav ol {
+    width: 100%;
+    text-align: center;
+}
+
 nav ol li {
-    display: inline;
-    margin: 0 1.2rem;
-    padding: 0.5rem;
+    display: inline-block;
+    margin: 0;
+    width: 15%;
 }
 
 nav ol li a {
@@ -100,14 +112,20 @@ nav ol li a {
     font-weight: 100;
     font-style: normal;
     font-weight: 600;
-    padding: 1rem;
     font-style: italic;
     color: rgb(0, 0, 0);
+    transition: letter-spacing 0.2s;
+    padding: 1rem;
 }
 
-nav ol li:hover {
-    transform: translateY(100px);
-    color: rgb(88, 88, 88);
+nav ol li a:hover {
+    /* text-shadow: 2px 2px black; */
+    letter-spacing: 2px;
+    color: rgb(189, 213, 81);
+}
+
+ol .logo-li {
+    width: fit-content;
 }
 
 nav .logo {
@@ -418,9 +436,9 @@ footer {
 footer .footer-logo {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-style: italic;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width:600px) and (max-width:769px) {
@@ -467,3 +485,16 @@ footer .footer-logo {
     }
 }
 
+@media only screen and (max-width:460px) {
+    nav ol li a:hover {
+        letter-spacing: normal;
+    }
+
+    nav ol li {
+        width: fit-content;
+    }
+
+    nav ol li a {
+        font-size: 1.3rem;
+    }
+}
