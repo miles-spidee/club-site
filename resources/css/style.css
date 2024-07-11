@@ -138,6 +138,12 @@ nav .logo {
     cursor: default;
 }
 
+nav .logo:hover {
+    border-bottom: none;
+    color: initial;
+    letter-spacing: initial;
+}
+
 @media only screen and (max-width:350px) {
     nav ol li{
         margin: 0;
