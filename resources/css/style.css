@@ -121,7 +121,8 @@ nav ol li a {
 nav ol li a:hover {
     /* text-shadow: 2px 2px black; */
     letter-spacing: 2px;
-    color: rgb(189, 213, 81);
+    color: rgb(155, 184, 24);
+    border-bottom: 1px solid black;
 }
 
 ol .logo-li {
@@ -488,6 +489,8 @@ footer .footer-logo {
 @media only screen and (max-width:460px) {
     nav ol li a:hover {
         letter-spacing: normal;
+        border-bottom: none;
+        color: initial;
     }
 
     nav ol li {
